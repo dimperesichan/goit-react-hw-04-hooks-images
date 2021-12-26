@@ -1,0 +1,81 @@
+.Search {
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: var(--white);
+
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.Search__form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--white);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.Search__button {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-image: url('../../images/svg/search.svg');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  transition: opacity 250ms var(--cubic);
+  cursor: pointer;
+  outline: none;
+}
+
+.Search__button:hover {
+  opacity: 1;
+}
+
+.Search__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.Search__input {
+  display: inline-block;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 100%;
+  color: var(--dark-purple);
+  font-family: var(--big);
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+
+.Search__input::placeholder {
+  font: var(--big);
+  font-size: 18px;
+}
